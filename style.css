@@ -1,0 +1,298 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+#header {
+    background-image: url('Images/background2.jpg.crdownload');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 54px; /* Larger size */
+    margin-top: 20px;
+    color: #ffffff; /* White */
+}
+
+.header-text h1 span {
+    color: #ff0000; /* Red */
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* About Section Styles */
+#about {
+    padding: 80px 0;
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+.about-col-1 img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.tab-titles {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.tab-links {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    margin-right: 30px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff0000; /* Red */
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.5s ease;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.tab-contents ul li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff0000; /* Red */
+    font-weight: bold;
+}
+
+/* Resume Section Styles */
+#resume {
+    padding: 80px 0;
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+.resume-item {
+    margin-bottom: 40px;
+}
+
+.resume-item h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume-item ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.resume-item ul li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 80px 0;
+    background-color: #333; /* Slightly lighter dark gray background */
+    color: #ffffff;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #444; /* Dark gray */
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+    width: 50%;
+    cursor: pointer;
+    background-color: #ff0000; /* Red */
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #d60043; /* Darker red on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000; 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .header-text h1 {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+    }
+
+    #contact input[type="submit"] {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    .tab-links {
+        font-size: 14px;
+    }
+
+    #contact input[type="submit"] {
+        width: 100%;
+    }
+}
+
+
+
+.tab-contents ul .skill-name {
+    color: #ff0000; /* Red */
+    font-weight: bold;
+}
+
+.tab-contents ul .skill-desc {
+    color: #ffffff; /* White */
+}
+
+
+#resume {
+    padding: 80px 0;
+    background-color:black; 
+    color: #ffffff;
+}
+
+#resume .sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ff0000; /* Red */
+}
+
+
+
